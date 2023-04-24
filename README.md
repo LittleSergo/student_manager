@@ -80,12 +80,7 @@
    
    
     def generate_group():
-        group = []
-        for _ in range(random.randint(15, 30)):
-            if not students:
-                return group
-            group.append(students.pop())
-        return group
+        return [students.pop() for _ in range(random.randint(15, 30)) if students]
    
    
     def insert_data(engine):
@@ -180,4 +175,3 @@
 
 
 5. Написати фласк додаток
-

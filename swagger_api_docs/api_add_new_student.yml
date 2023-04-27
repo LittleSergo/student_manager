@@ -1,0 +1,26 @@
+Add new student to the database.
+---
+description: Add new student to the database.
+parameters:
+  - name: format
+    in: query
+    type: string
+    required: false
+    enum: ['json', 'xml']
+  - name: group_id
+    in: query
+    type: integer
+    required: true
+  - name: first_name
+    in: query
+    type: string
+    required: true
+  - name: last_name
+    in: query
+    type: string
+    required: true
+responses:
+  201:
+    description: 'successfully created!'
+tags:
+  - "Students"

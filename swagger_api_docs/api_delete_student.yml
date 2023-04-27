@@ -1,0 +1,18 @@
+Delete student from the database.
+---
+description: Delete student from the database.
+parameters:
+  - name: format
+    in: query
+    type: string
+    required: false
+    enum: ['json', 'xml']
+  - name: student_id
+    in: query
+    type: integer
+    required: true
+responses:
+  200:
+    description: 'query success!'
+tags:
+  - "Students"

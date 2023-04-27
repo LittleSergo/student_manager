@@ -1,0 +1,18 @@
+Response a students which relates to course.
+---
+description: Response a students which relates to course.
+parameters:
+  - name: format
+    in: query
+    type: string
+    required: false
+    enum: ['json', 'xml']
+  - name: course
+    in: path
+    type: string
+    required: true
+responses:
+  200:
+    description: 'query success!'
+tags:
+  - "Students in course"

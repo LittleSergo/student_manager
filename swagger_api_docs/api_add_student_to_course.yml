@@ -1,0 +1,22 @@
+Add student to the course.
+---
+description: Add student to the course.
+parameters:
+  - name: format
+    in: query
+    type: string
+    required: false
+    enum: ['json', 'xml']
+  - name: student_id
+    in: query
+    type: integer
+    required: true
+  - name: course_name
+    in: query
+    type: string
+    required: true
+responses:
+  200:
+    description: 'query success!'
+tags:
+  - "Course"

@@ -1,0 +1,18 @@
+Response a groups with less or equals count of students.
+---
+description: Response a groups with less or equals count of students.
+parameters:
+  - name: format
+    in: query
+    type: string
+    required: false
+    enum: ['json', 'xml']
+  - name: count
+    in: query
+    type: integer
+    required: true
+responses:
+  200:
+    description: 'query success!'
+tags:
+  - "Group"

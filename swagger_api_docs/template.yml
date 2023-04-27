@@ -1,0 +1,16 @@
+swagger: "2.0"
+info:
+  title: API documentation for Student manager
+  description: Documentation for Student manager
+  version: '1.0'
+  basePath: /api/v1/group/
+  schemes: ['http', 'https']
+
+produces: [
+  'application/json',
+  'application/xml'
+]
+
+tags:
+  - name: "Student manager"
+    description: "API representation of Student manager"

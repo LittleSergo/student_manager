@@ -1,4 +1,4 @@
-# Task 10 - SQL
+# Student manager
 
 This is API application for student manager. It allows to find groups with
 less or equals students count, find students on the course, add new 
